@@ -119,25 +119,26 @@ button {
 .skill {
     position: absolute;
     top: 110%;
-    left: 10%;
+    left: 5%;
     display: flex;
-    column-gap: 20px;
+    justify-content: space-evenly;
 }
 .skill > div {
     height: 10%;
     padding: 20px;
     background-color: rgba(49, 47, 47, 0.123);
     border-radius: 16px;
-    width: calc((100% - 85px)/3);
+    width: calc(80%/3);
     height: fit-content;
     transition-property: transform,boxshadow;
     transition-duration: 2s,2s;
     transition-delay: 0s,0s;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 200px;
 }
+
 .skill > div:hover {
     transform: translateY(-50px);
     box-shadow: 0px 1px 5px 1px #3ca36e;
@@ -151,20 +152,24 @@ button {
     margin-bottom: 10px;
     display: block;
 }
+.skill>div .skill-title, .skill>div .skill-title div{
+    display: flex;
+    flex-flow: row wrap;
+}
 .skill-title {
     display: block;
     font-weight: bold;
     line-height: 1.6;
 }
-.skill-title span {
+.skill-title div {
     font-weight: 100;
     color: rgb(155, 154, 154);
 }
 footer {
-    
+    background-color: black;
     position: absolute;
     top: 150%;
-    left: 0;
+    left: 0%;
     width: 100%;
     padding-top: 5%;
     border-top: 2px solid white;
@@ -210,91 +215,124 @@ footer .contact img:hover {
         left: 86%;
     }
     .skill>div {
-        width: fit-content;
+        width: 250px;
+        
     }
+    
     .skill {
-        left: 5%;
+        left: 10%;
         
     }
     footer {
         width: 136%;
     }
 }
+
 @media (max-width:412px) {
     body,html {
-        
-        font-size: 30px;
+        font-size: 10px;
+        overflow-y: auto;
     }
     nav {
         width: 100%;
+        padding-bottom: 0;
     }
     nav a {
         display: none;
     }
-    nav span {
-        
-        font-size: 60px;
-    }
     #Profile-Pic img {
-        width: 80%;
-        top: 100%;
-        left: 100%;
+        width: 60%;
+        height: 28%;
+        top: 43%;
+        left: 18%;
     }
     #job-break {
         display: none;
     }
     .job-title{
-        left: 90%;
+        left: 6%;
+        font-size: 40px;  
+        white-space: nowrap;
     }
     .description {
-        top: 50%;
-        left: -70%;
-        width: 90%;
+        top: 29%;
+        left: -100%;
+        width: fit-content;
+    }
+    .description div,button {
+        line-height: 0.5;
+        margin-left: 130%;
+        margin-bottom: -2%;
+        white-space: nowrap;
+        font-size: 12px;
+        text-align: center;
     }
     button {
-        position: absolute;
-        top: 117%;
-        left: 190%;
-        width: fit-content;
-        font-size: 30px;
-    }
-    .description div {
-        margin: -10px 0;
-        width: 1500px;
-        font-size: 35px;
-        text-align: center
+        top: 150%;
+        left: 30%;
     }
     #skills,.skill {
         top: 139%;
     }
-    #skills {
-        margin-top: -90px;
-        margin-left: 240px;
-        font-size: 35px;
+    #skills {    
+        top: 74%;
+        left: 0;
+        font-size: 14px;
         font-weight: bold;
         letter-spacing: 2px;
     }
    
     .skill {
-        left: 10%;
+        left: 0%;
+        top: 80%;
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2,40%);
         grid-template-rows: repeat(2,auto);
-        gap: 10px 10px;
+        gap: 65px 20px;
         width: 100%;
     }
     .skill>div {
         grid-column: span 1;
         width: fit-content;
+        transform: scale(1.2,1.2);
+    }
+    .skill>div:hover {
+        transform: translateY(-20px) scale(1.2,1.2);
+        box-shadow: 0px 1px 5px 1px #3ca36e;
+    }
+    .skill > div:nth-last-child(1) {
+        margin-bottom: 305px;
     }
     footer {
-        top: 200%;
-        width: 270%;
+        position: fixed;
+        top: 654px;
+        left: 0;
+        width: 100%;
     }
     
 }
-
-
+@media (max-width:360px) {
+    #Profile-Pic img {
+        top: 45%;
+        left: 18%;
+    }
+    .description {
+        left: -120%;
+    }
+    footer {
+        position: fixed;
+        top: 570px;
+        left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 540px ) and (min-width:413px) {
+    nav div div {
+        left: 60%;
+    }
+    footer {
+        width: 182%;
+    }
+}
 
   
-
