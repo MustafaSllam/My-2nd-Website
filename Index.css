@@ -1,0 +1,297 @@
+:root {
+    --mainColor: #3ca36e;
+}
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+}
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    z-index: 100;
+}
+nav span {
+    color: var(--mainColor);
+    font-size: 39px;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 0%;
+    left: 5%;
+}
+nav > div {
+    position: relative;
+} 
+nav div div {
+    position: absolute;
+    display: inline-block;
+    left: 65%;
+    margin-top: 20px;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px;
+}
+nav div div a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-bottom: 3px solid #8fefbd;
+    width: 0%;
+    transition: 0.3s 0s width linear;
+    
+}
+a:hover::before {
+    width: 100%;
+}
+.job-title {
+    font-size: 100px;    
+    background: linear-gradient(35deg 
+    , var(--mainColor,#3ca36e) 20% 
+    , var(--mainColor,#3ca36e) 45%
+    ,white 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+}
+.description {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+.description div {
+    margin: 1.5% 0px;
+    width: 94%;
+    white-space: normal;
+}
+button {
+    position: absolute;
+    top: 120%;
+    left: 1%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--mainColor,#3ca36e);
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+#Profile-Pic img { 
+    position: absolute;
+    z-index: -1;
+    top: 21%;
+    left: 66%;
+    width: 28%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid var(--mainColor, #3ca36e);
+    box-shadow: 39px -184px 130px 74px #3ca36e32,
+                0px 0px 100px 10px #3ca36e32;
+    animation: bubble-animation 0.8s 0s infinite linear alternate;
+}
+@keyframes bubble-animation {
+    100% {
+        transform: translateY(-10px);
+    }
+}
+#skills {
+    top: 100%;
+}
+.skill {
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    display: flex;
+    column-gap: 20px;
+}
+.skill > div {
+    height: 10%;
+    padding: 20px;
+    background-color: rgba(49, 47, 47, 0.123);
+    border-radius: 16px;
+    width: calc((100% - 85px)/3);
+    height: fit-content;
+    transition-property: transform,boxshadow;
+    transition-duration: 2s,2s;
+    transition-delay: 0s,0s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+}
+.skill > div:hover {
+    transform: translateY(-50px);
+    box-shadow: 0px 1px 5px 1px #3ca36e;
+}
+.skill > div:hover::after {
+    opacity: 100%;
+}
+.skill  div img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    display: block;
+}
+.skill-title {
+    display: block;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.skill-title span {
+    font-weight: 100;
+    color: rgb(155, 154, 154);
+}
+footer {
+    
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 100%;
+    padding-top: 5%;
+    border-top: 2px solid white;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+footer .contact img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    transition-property: transform,background-color;
+    transition-duration: 0.5s,0.5s;
+    transition-delay: 0s,0s;
+}
+footer .contact img:hover {
+    transform: translateY(-20px);
+    background-color: #3ca36e;
+}
+@media(max-width:820px) {
+    #Profile-Pic img {
+        width: 50%;
+        left: 80%;
+    }
+    .skill>div {
+        width: fit-content;;
+        
+    }
+    .skill {
+        left: 2%;
+        column-gap: 30px;
+    }
+    footer {
+        width: 130%;
+    }
+}
+@media (max-width:768px) {
+    #Profile-Pic img {
+        width: 50%;
+        left: 86%;
+    }
+    .skill>div {
+        width: fit-content;
+    }
+    .skill {
+        left: 5%;
+        
+    }
+    footer {
+        width: 136%;
+    }
+}
+@media (max-width:412px) {
+    body,html {
+        max-width: 100%;
+        overflow-x: hidden;
+        font-size: 30px;
+    }
+    nav {
+        width: 90%;
+    }
+    nav a {
+        display: none;
+    }
+    nav span {
+        
+        font-size: 60px;
+    }
+    #Profile-Pic img {
+        width: 80%;
+        top: 80%;
+        left: 85%;
+    }
+    #job-break {
+        display: none;
+    }
+    .job-title{
+        left: 70%;
+    }
+    .description {
+        top: 50%;
+        left: -50%;
+        width: 90%;
+    }
+    button {
+        position: absolute;
+        top: 117%;
+        left: 173%;
+        width: fit-content;
+        font-size: 30px;
+    }
+    .description div {
+        margin: -10px 0;
+        width: 1500px;
+        font-size: 35px;
+        text-align: center
+    }
+    #skills,.skill {
+        top: 139%;
+    }
+    #skills {
+        margin-top: -90px;
+        margin-left: 240px;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+   
+    .skill {
+        left: 0%;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        gap: 10px 10px;
+        width: 100%;
+    }
+    .skill>div {
+        grid-column: span 1;
+        width: fit-content;
+    }
+    footer {
+        top: 200%;
+        width: 255%;
+    }
+    
+}
+  
