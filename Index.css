@@ -294,6 +294,7 @@ footer .contact img:hover {
     .skill>div {
         grid-column: span 1;
         width: fit-content;
+        word-break: break-word;
         transform: scale(1.2,1.2);
     }
     .skill>div:hover {
@@ -332,12 +333,12 @@ footer .contact img:hover {
         align-items: center;
     }
     .skill {
-        left: 30%;
-        top: 83%;
+        left: 25%;
+        top: 87%;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,82%);
         grid-template-rows: repeat(3,auto);
-        gap: 104px 0px;
+        gap: 70px 36px;
         width: 50%;
     }
     #Profile-Pic img {
@@ -350,9 +351,13 @@ footer .contact img:hover {
     
     footer {
         position: fixed;
-        top: 69%;
+        top: 78%;
         padding: 0;
         width: 100%;
+    }
+    footer div {
+        margin: 33px;
+        margin-top: 0;
     }
 }
 @media (max-width: 540px ) and (min-width:413px) {
@@ -365,6 +370,7 @@ footer .contact img:hover {
 }
 
   
+
 
 
 
