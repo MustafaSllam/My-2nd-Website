@@ -314,7 +314,8 @@ footer .contact img:hover {
 @media (max-width:360px) {
     *{border-sizing:border-box;}
     .job-title {
-        left: -50%;
+    left: 4%;
+    font-size: 37px;
     }
     #Profile-Pic img {
         top: 40%;
@@ -330,20 +331,20 @@ footer .contact img:hover {
         text-align: center;
     }
     .skill {
-        left: 0%;
-        top: 80%;
-        display: grid;
-        grid-template-columns: repeat(2,40%);
-        grid-template-rows: repeat(2,auto);
-        gap: 65px 20px;
-        width: 100%;
-    }
+    left: 30%;
+    top: 83%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 104px 0px;
+    width: 50%;
+}
     #Profile-Pic img {
         top: 45%;
         left: 21%;
     }
     .description {
-        left: -111%;
+        left: -119%;
     }
     
     footer {
@@ -363,6 +364,7 @@ footer .contact img:hover {
 }
 
   
+
 
 
 
