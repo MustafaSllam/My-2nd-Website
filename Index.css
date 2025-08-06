@@ -312,18 +312,21 @@ footer .contact img:hover {
     
 }
 @media (max-width:360px) {
+    .job-title {
+        left: 100%;
+    }
     #Profile-Pic img {
         top: 55%;
         left: 40%;
     }
     .description {
-        left: -160%;
+        left: -111%;
     }
     footer {
         position: fixed;
-        top: 100%;
+        top: 77%;
         left: 0;
-        width: 150%;
+        width: 100%;
     }
 }
 @media (max-width: 540px ) and (min-width:413px) {
@@ -336,4 +339,5 @@ footer .contact img:hover {
 }
 
   
+
 
