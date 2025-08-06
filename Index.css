@@ -312,10 +312,9 @@ footer .contact img:hover {
     
 }
 @media (max-width:360px) {
-    *{border-sizing:border-box;}
     .job-title {
-    left: 4%;
-    font-size: 37px;
+        left: 4%;
+        font-size: 37px;
     }
     #Profile-Pic img {
         top: 40%;
@@ -323,22 +322,24 @@ footer .contact img:hover {
     }
     .description div, button {
         line-height: 0.5;
-        margin-left: 124%;
+        margin-left: 127%;
         margin-right: auto;
         margin-bottom: -2%;
         white-space: nowrap;
         font-size: 12px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .skill {
-    left: 30%;
-    top: 83%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3,auto);
-    gap: 104px 0px;
-    width: 50%;
-}
+        left: 30%;
+        top: 83%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 104px 0px;
+        width: 50%;
+    }
     #Profile-Pic img {
         top: 45%;
         left: 21%;
@@ -349,8 +350,8 @@ footer .contact img:hover {
     
     footer {
         position: fixed;
-        top: 73%;
-        left: 0;
+        top: 69%;
+        padding: 0;
         width: 100%;
     }
 }
@@ -364,6 +365,7 @@ footer .contact img:hover {
 }
 
   
+
 
 
 
