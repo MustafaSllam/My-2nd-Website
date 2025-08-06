@@ -333,7 +333,7 @@ footer .contact img:hover {
         align-items: center;
     }
     .skill {
-        left: 25%;
+        left: 5%;
         top: 87%;
         display: grid;
         grid-template-columns: repeat(2,82%);
@@ -351,7 +351,7 @@ footer .contact img:hover {
     
     footer {
         position: fixed;
-        top: 75%;
+        top: 80%;
         padding: 0;
         width: 100%;
     }
@@ -369,6 +369,7 @@ footer .contact img:hover {
 }
 
   
+
 
 
 
