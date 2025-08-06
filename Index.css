@@ -237,24 +237,24 @@ footer .contact img:hover {
     }
     #Profile-Pic img {
         width: 80%;
-        top: 80%;
-        left: 85%;
+        top: 100%;
+        left: 100%;
     }
     #job-break {
         display: none;
     }
     .job-title{
-        left: 70%;
+        left: 90%;
     }
     .description {
         top: 50%;
-        left: -50%;
+        left: -70%;
         width: 90%;
     }
     button {
         position: absolute;
         top: 117%;
-        left: 173%;
+        left: 190%;
         width: fit-content;
         font-size: 30px;
     }
@@ -276,7 +276,7 @@ footer .contact img:hover {
     }
    
     .skill {
-        left: 0%;
+        left: 10%;
         display: grid;
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(2,auto);
@@ -289,7 +289,7 @@ footer .contact img:hover {
     }
     footer {
         top: 200%;
-        width: 255%;
+        width: 270%;
     }
     
 }
@@ -297,3 +297,4 @@ footer .contact img:hover {
 
 
   
+
