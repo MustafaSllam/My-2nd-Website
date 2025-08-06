@@ -351,13 +351,12 @@ footer .contact img:hover {
     
     footer {
         position: fixed;
-        top: 78%;
+        top: 75%;
         padding: 0;
         width: 100%;
     }
     footer div {
         margin: 33px;
-        margin-top: 0;
     }
 }
 @media (max-width: 540px ) and (min-width:413px) {
@@ -370,6 +369,7 @@ footer .contact img:hover {
 }
 
   
+
 
 
 
