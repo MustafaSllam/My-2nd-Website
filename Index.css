@@ -313,18 +313,32 @@ footer .contact img:hover {
 }
 @media (max-width:360px) {
     .job-title {
-        left: 100%;
+        left: 7%;
     }
     #Profile-Pic img {
         top: 55%;
         left: 40%;
     }
+    .description div, button {
+        line-height: 0.5;
+        margin-left: 124%;
+        margin-right: auto;
+        margin-bottom: -2%;
+        white-space: nowrap;
+        font-size: 12px;
+        text-align: center;
+    }
+    #Profile-Pic img {
+        top: 45%;
+        left: 21%;
+    }
     .description {
         left: -111%;
     }
+    
     footer {
         position: fixed;
-        top: 77%;
+        top: 73%;
         left: 0;
         width: 100%;
     }
@@ -339,5 +353,6 @@ footer .contact img:hover {
 }
 
   
+
 
 
