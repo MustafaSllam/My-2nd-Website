@@ -313,17 +313,17 @@ footer .contact img:hover {
 }
 @media (max-width:360px) {
     #Profile-Pic img {
-        top: 45%;
-        left: 18%;
+        top: 55%;
+        left: 40%;
     }
     .description {
-        left: -120%;
+        left: -160%;
     }
     footer {
         position: fixed;
-        top: 570px;
+        top: 100%;
         left: 0;
-        width: 100%;
+        width: 150%;
     }
 }
 @media (max-width: 540px ) and (min-width:413px) {
@@ -336,3 +336,4 @@ footer .contact img:hover {
 }
 
   
+
